@@ -2,19 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Athira Chandran | Data Science Portfolio</title>
+  <title>Athira Chandran | AI & Data Science Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
-
 <body>
-
-<div class="particles"></div>
 
 <header>
   <nav>
@@ -30,140 +27,144 @@
 
 <section class="hero">
   <h1 class="glow">Athira Chandran</h1>
-  <h3>M.Tech Data Science | AI & ML Research Enthusiast</h3>
-  <p>Transforming complex data into intelligent and impactful solutions.</p>
-  <a href="#projects" class="btn">Explore My Work</a>
+  <h3>M.Tech Data Science | AI Research Enthusiast</h3>
+  <p>Building intelligent systems for real-world impact.</p>
+  <a href="#projects" class="btn">Explore My Research</a>
 </section>
 
 <section id="about" class="section reveal">
   <h2>About Me</h2>
   <div class="glass">
     <p>
-      I am a passionate and goal-oriented M.Tech Data Science student with a strong
-      foundation in Machine Learning, Deep Learning, and Statistical Analysis.
-      My academic journey reflects consistent excellence, with a CGPA of 8.72 in M.Tech
-      and 8.39 in B.Tech.
+      I am a research-driven M.Tech Data Science student with strong academic performance
+      (CGPA 8.72) and deep interest in Artificial Intelligence, NLP, and Computer Vision.
     </p>
     <br>
     <p>
-      I specialize in building end-to-end data science pipelines — from data preprocessing
-      and feature engineering to model development, optimization, and evaluation.
-      My interests lie in Natural Language Processing, Computer Vision, and
-      AI-driven healthcare applications.
+      My work focuses on developing robust machine learning pipelines —
+      from preprocessing and feature engineering to model optimization and evaluation.
+      I actively explore cross-lingual AI systems and healthcare AI applications.
     </p>
     <br>
     <p>
-      I have presented research at IEEE INDICON 2025 and actively explore
-      cross-lingual AI systems for low-resource languages. I aim to leverage
-      AI to build scalable and socially impactful solutions.
+      I presented my research at IEEE INDICON 2025, demonstrating
+      experimental validation and performance benchmarking in medical AI.
+      My goal is to build scalable AI systems that solve meaningful problems.
     </p>
   </div>
 </section>
 
 <section id="projects" class="section reveal">
-  <h2>Projects</h2>
+  <h2>Research Projects</h2>
 
   <div class="card">
     <h3><i class="fas fa-microphone-alt"></i> Cross-Lingual Speaker Verification</h3>
     <p>
-      Built ECAPA-Conformer architecture combining spectral and prosodic features.
-      Applied hybrid AAM-Softmax + Triplet loss.
+      Developed a cross-lingual speaker verification system by leveraging transfer learning.
+      Pre-trained on high-resource English (LibriSpeech) and fine-tuned on Tamil and Malayalam datasets.
     </p>
-    <p><strong>Focus:</strong> Speech Processing | Representation Learning</p>
+    <p>
+      Implemented ECAPA-Conformer architecture integrating spectral (Log-Mel, MFCC)
+      and prosodic (pitch, energy) features using multi-head attention fusion.
+    </p>
+    <p><strong>Tech Stack:</strong> PyTorch, Feature Engineering, Representation Learning</p>
+    <p><strong>Outcome:</strong> Improved embedding discrimination and model robustness using
+      hybrid AAM-Softmax + Triplet loss and SpecAugment.</p>
   </div>
 
   <div class="card">
     <h3><i class="fas fa-language"></i> Multilingual Hate Speech Detection</h3>
     <p>
-      Compared ML models and Transformer architectures (BERT, MuRIL, mBERT).
-      Addressed class imbalance and hyperparameter optimization.
+      Built an NLP pipeline for multilingual hate speech detection
+      using English and Malayalam social media datasets.
     </p>
-    <p><strong>Focus:</strong> NLP | Transformer Models</p>
+    <p>
+      Compared traditional ML models (Decision Tree, Random Forest, XGBoost)
+      with deep learning (CNN + BiLSTM) and transformer architectures
+      (BERT, MuRIL, mBERT, IndicBERT).
+    </p>
+    <p><strong>Tech Stack:</strong> Transformers, Scikit-learn, NLP Preprocessing</p>
+    <p><strong>Outcome:</strong> Addressed class imbalance and optimized hyperparameters
+      to enhance F1-score and generalization.</p>
   </div>
 
   <div class="card">
-    <h3><i class="fas fa-utensils"></i> Indian Food Detection (YOLOv5)</h3>
+    <h3><i class="fas fa-utensils"></i> Indian Food Detection & Nutrient Estimation</h3>
     <p>
-      Developed computer vision pipeline achieving mAP@0.5 of 0.76.
-      Reduced false positives by 18%.
+      Designed a computer vision–based detection system using YOLOv5
+      to identify Indian food items and associate them with nutritional data.
     </p>
-    <p><strong>Focus:</strong> Object Detection | Optimization</p>
+    <p>
+      Conducted optimizer comparisons and threshold tuning experiments
+      to reduce false positives and improve detection accuracy.
+    </p>
+    <p><strong>Tech Stack:</strong> YOLOv5, OpenCV, Deep Learning Optimization</p>
+    <p><strong>Outcome:</strong> Achieved mAP@0.5 of 0.76 with 18% reduction in false positives.</p>
   </div>
 
   <div class="card">
-    <h3><i class="fas fa-brain"></i> Neonatal HIE Framework</h3>
+    <h3><i class="fas fa-brain"></i> Neonatal HIE Segmentation & Classification</h3>
     <p>
-      Two-stage segmentation + classification pipeline.
-      Achieved 89% accuracy and Dice score of 0.749.
+      Proposed a two-stage deep learning pipeline combining medical image segmentation
+      with classification for neonatal Hypoxic-Ischemic Encephalopathy analysis.
     </p>
-    <p><strong>Focus:</strong> Medical AI | Deep Learning</p>
+    <p>
+      Integrated feature extraction, model validation, and comparative benchmarking.
+    </p>
+    <p><strong>Tech Stack:</strong> CNN Architectures, Medical Imaging, Evaluation Metrics</p>
+    <p><strong>Outcome:</strong> Dice score 0.749, classification accuracy 89%, macro F1-score 0.83.
+      Presented at IEEE INDICON 2025.</p>
   </div>
 
 </section>
 
-  
- 
 <section id="skills" class="section reveal">
-  <h2>Technical Skills</h2>
+  <h2>Technical Expertise</h2>
 
-  <div class="skills-grid">
+  <div class="skills-wrapper">
 
-    <div class="skill-card">
-      <i class="fab fa-python"></i>
-      <p>Python</p>
+    <div class="skill-group">
+      <h4><i class="fas fa-code"></i> Programming</h4>
+      <p>Python, Java, SQL, PostgreSQL</p>
     </div>
 
-    <div class="skill-card">
-      <i class="fas fa-database"></i>
-      <p>SQL / PostgreSQL</p>
+    <div class="skill-group">
+      <h4><i class="fas fa-brain"></i> Machine & Deep Learning</h4>
+      <p>Classification, Regression, Clustering, Neural Networks,
+         Model Evaluation, Feature Engineering</p>
     </div>
 
-    <div class="skill-card">
-      <i class="fas fa-brain"></i>
-      <p>Machine Learning</p>
+    <div class="skill-group">
+      <h4><i class="fas fa-comments"></i> NLP & Speech</h4>
+      <p>BERT, mBERT, MuRIL, IndicBERT, NLTK, Speech Processing</p>
     </div>
 
-    <div class="skill-card">
-      <i class="fas fa-network-wired"></i>
-      <p>Deep Learning</p>
+    <div class="skill-group">
+      <h4><i class="fas fa-camera"></i> Computer Vision</h4>
+      <p>YOLOv5, Image Segmentation, Object Detection</p>
     </div>
 
-    <div class="skill-card">
-      <i class="fas fa-comments"></i>
-      <p>NLP</p>
+    <div class="skill-group">
+      <h4><i class="fas fa-chart-line"></i> Data Analysis</h4>
+      <p>Pandas, NumPy, Matplotlib, Seaborn, Statistical Analysis</p>
     </div>
 
-    <div class="skill-card">
-      <i class="fas fa-camera"></i>
-      <p>Computer Vision</p>
-    </div>
-
-    <div class="skill-card">
-      <i class="fas fa-chart-line"></i>
-      <p>Statistical Analysis</p>
-    </div>
-
-    <div class="skill-card">
-      <i class="fab fa-git-alt"></i>
-      <p>Git & GitHub</p>
+    <div class="skill-group">
+      <h4><i class="fab fa-git-alt"></i> Tools</h4>
+      <p>Git, GitHub, Jupyter Notebook, Google Colab, VS Code</p>
     </div>
 
   </div>
 </section>
-
 
 <section id="contact" class="section reveal">
   <h2>Contact</h2>
   <p>Email: athirachandran4224@gmail.com</p>
-  <p>Location: Kannur, Kerala</p>
-  <p>
-    <a href="https://linkedin.com/in/iamathirachandran" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/Athira-Chandran2000" target="_blank">GitHub</a>
-  </p>
+  <p>Kannur, Kerala</p>
 </section>
 
 <footer>
-  © 2026 Athira Chandran | Data Science Portfolio
+  © 2026 Athira Chandran | AI Portfolio
 </footer>
 
 </body>

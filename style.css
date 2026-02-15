@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #0a0a0a;
-  color: #eaeaea;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a2e, #16213e);
+  color: #f1f1f1;
   scroll-behavior: smooth;
 }
 
@@ -15,8 +15,8 @@ header {
   position: fixed;
   width: 100%;
   padding: 20px 50px;
-  background: rgba(0,0,0,0.8);
-  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
   z-index: 1000;
 }
 
@@ -34,13 +34,12 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #eaeaea;
-  font-weight: bold;
+  color: #f1f1f1;
   transition: 0.3s;
 }
 
 nav a:hover {
-  color: #00ffff;
+  color: #00f5ff;
 }
 
 .hero {
@@ -54,14 +53,13 @@ nav a:hover {
 
 .glow {
   font-size: 3.5rem;
-  color: #ffffff;
-  text-shadow: 0 0 15px #00ffff;
+  text-shadow: 0 0 20px #00f5ff;
 }
 
 .btn {
   margin-top: 20px;
   padding: 12px 30px;
-  background: #00ffff;
+  background: #00f5ff;
   border-radius: 30px;
   text-decoration: none;
   color: black;
@@ -69,24 +67,18 @@ nav a:hover {
   transition: 0.3s;
 }
 
-.btn:hover {
-  transform: scale(1.1);
-}
-
 .section {
   padding: 120px 10%;
-  text-align: center;
 }
 
 .glass {
   background: rgba(255,255,255,0.05);
   padding: 40px;
   border-radius: 20px;
-  backdrop-filter: blur(10px);
 }
 
 .card {
-  background: rgba(255,255,255,0.04);
+  background: rgba(255,255,255,0.05);
   padding: 30px;
   margin: 30px 0;
   border-radius: 20px;
@@ -94,38 +86,31 @@ nav a:hover {
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  background: rgba(0,255,255,0.08);
+  transform: translateY(-10px);
+  background: rgba(0,255,255,0.1);
 }
 
 .card i {
   margin-right: 10px;
-  color: #00ffff;
+  color: #00f5ff;
 }
 
-.skills-grid {
+.skills-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 25px;
-  margin-top: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
-.skill-card {
+.skill-group {
   background: rgba(255,255,255,0.05);
-  padding: 30px;
+  padding: 25px;
   border-radius: 15px;
-  transition: 0.3s;
 }
 
-.skill-card i {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #00ffff;
-}
-
-.skill-card:hover {
-  transform: translateY(-5px);
-  background: rgba(0,255,255,0.08);
+.skill-group h4 {
+  margin-bottom: 10px;
+  color: #00f5ff;
 }
 
 footer {
