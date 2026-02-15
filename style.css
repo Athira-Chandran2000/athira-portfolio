@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f2027;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.glow {
+  font-size: 3.5rem;
+  text-shadow: 0 0 20px #00f2ff;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #00f2ff;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.section {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.glass {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(0,255,255,0.2);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills span {
+  background: rgba(0,255,255,0.2);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0,0,0,0.5);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
