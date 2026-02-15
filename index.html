@@ -59,109 +59,119 @@
 
   <div class="card">
     <h3><i class="fas fa-microphone-alt"></i> Cross-Lingual Speaker Verification</h3>
+
     <p>
-      Developed a cross-lingual speaker verification system by leveraging transfer learning.
-      Pre-trained on high-resource English (LibriSpeech) and fine-tuned on Tamil and Malayalam datasets.
+      Designed a robust cross-lingual speaker verification system addressing
+      low-resource language challenges in Tamil and Malayalam by leveraging
+      transfer learning from high-resource English datasets (LibriSpeech).
     </p>
+
     <p>
-      Implemented ECAPA-Conformer architecture integrating spectral (Log-Mel, MFCC)
-      and prosodic (pitch, energy) features using multi-head attention fusion.
+      Implemented an advanced ECAPA-Conformer architecture integrating
+      spectral (Log-Mel, MFCC) and prosodic (pitch, energy) features using
+      multi-head attention fusion for enhanced speaker embedding representation.
     </p>
-    <p><strong>Tech Stack:</strong> PyTorch, Feature Engineering, Representation Learning</p>
-    <p><strong>Outcome:</strong> Improved embedding discrimination and model robustness using
-      hybrid AAM-Softmax + Triplet loss and SpecAugment.</p>
+
+    <p>
+      Enhanced discriminative learning through hybrid AAM-Softmax and Triplet loss.
+      Applied SpecAugment, noise injection, and reverberation augmentation
+      to improve model robustness and cross-language generalization.
+    </p>
+
+    <p><strong>Key Contribution:</strong> Improved embedding separability
+       and reduced domain gap between high-resource and low-resource languages.</p>
   </div>
 
   <div class="card">
     <h3><i class="fas fa-language"></i> Multilingual Hate Speech Detection</h3>
+
     <p>
-      Built an NLP pipeline for multilingual hate speech detection
-      using English and Malayalam social media datasets.
+      Developed a multilingual NLP pipeline for hate speech detection
+      across English and Malayalam social media datasets.
     </p>
+
     <p>
-      Compared traditional ML models (Decision Tree, Random Forest, XGBoost)
-      with deep learning (CNN + BiLSTM) and transformer architectures
+      Conducted comparative experimentation between traditional ML models
+      (Decision Tree, Random Forest, XGBoost), deep learning models
+      (CNN + BiLSTM hybrid), and transformer-based architectures
       (BERT, MuRIL, mBERT, IndicBERT).
     </p>
-    <p><strong>Tech Stack:</strong> Transformers, Scikit-learn, NLP Preprocessing</p>
-    <p><strong>Outcome:</strong> Addressed class imbalance and optimized hyperparameters
-      to enhance F1-score and generalization.</p>
+
+    <p>
+      Addressed class imbalance using resampling strategies and optimized
+      hyperparameters using cross-validation for improved macro F1-score.
+    </p>
+
+    <p><strong>Impact:</strong> Contributed to robust NLP solutions
+       for low-resource languages with strong generalization performance.</p>
   </div>
 
   <div class="card">
     <h3><i class="fas fa-utensils"></i> Indian Food Detection & Nutrient Estimation</h3>
+
     <p>
-      Designed a computer vision–based detection system using YOLOv5
-      to identify Indian food items and associate them with nutritional data.
+      Built a computer vision pipeline to detect Indian food items
+      using YOLOv5 object detection framework and mapped them
+      to nutritional information databases.
     </p>
+
     <p>
-      Conducted optimizer comparisons and threshold tuning experiments
-      to reduce false positives and improve detection accuracy.
+      Conducted optimizer comparisons, confidence threshold tuning,
+      and bounding-box refinement to reduce false positives and improve detection stability.
     </p>
-    <p><strong>Tech Stack:</strong> YOLOv5, OpenCV, Deep Learning Optimization</p>
-    <p><strong>Outcome:</strong> Achieved mAP@0.5 of 0.76 with 18% reduction in false positives.</p>
+
+    <p>
+      Performed systematic evaluation using mAP@0.5 metric
+      and error analysis to understand misclassification patterns.
+    </p>
+
+    <p><strong>Outcome:</strong> Achieved mAP@0.5 of 0.76 and
+       reduced false positives by 18%, improving real-world applicability.</p>
   </div>
 
   <div class="card">
     <h3><i class="fas fa-brain"></i> Neonatal HIE Segmentation & Classification</h3>
+
     <p>
-      Proposed a two-stage deep learning pipeline combining medical image segmentation
-      with classification for neonatal Hypoxic-Ischemic Encephalopathy analysis.
+      Proposed a two-stage medical AI framework integrating
+      deep learning–based image segmentation and machine learning classification
+      to analyze neonatal Hypoxic-Ischemic Encephalopathy severity.
     </p>
+
     <p>
-      Integrated feature extraction, model validation, and comparative benchmarking.
+      Applied feature extraction and comparative benchmarking
+      to validate segmentation and classification consistency.
     </p>
-    <p><strong>Tech Stack:</strong> CNN Architectures, Medical Imaging, Evaluation Metrics</p>
-    <p><strong>Outcome:</strong> Dice score 0.749, classification accuracy 89%, macro F1-score 0.83.
-      Presented at IEEE INDICON 2025.</p>
+
+    <p>
+      Evaluated performance using Dice coefficient, classification accuracy,
+      and macro F1-score to ensure reliability across severity grades.
+    </p>
+
+    <p><strong>Achievement:</strong> Dice score 0.749, accuracy 89%,
+       macro F1-score 0.83. Presented at IEEE INDICON 2025.</p>
   </div>
 
 </section>
 
-<section id="skills" class="section reveal">
-  <h2>Technical Expertise</h2>
+<div class="skill-group">
+  <h4><i class="fas fa-database"></i> Data Engineering</h4>
+  <p>Data Cleaning, Data Preprocessing, Feature Selection,
+     Data Transformation, Pipeline Design</p>
+</div>
 
-  <div class="skills-wrapper">
+<div class="skill-group">
+  <h4><i class="fas fa-flask"></i> Model Optimization</h4>
+  <p>Hyperparameter Tuning, Cross Validation,
+     Regularization, Loss Functions, Performance Benchmarking</p>
+</div>
 
-    <div class="skill-group">
-      <h4><i class="fas fa-code"></i> Programming</h4>
-      <p>Python, Java, SQL, PostgreSQL</p>
-    </div>
+<div class="skill-group">
+  <h4><i class="fas fa-project-diagram"></i> Research & Experimentation</h4>
+  <p>Comparative Analysis, Experimental Design,
+     Evaluation Metrics, Research Presentation</p>
+</div>
 
-    <div class="skill-group">
-      <h4><i class="fas fa-brain"></i> Machine & Deep Learning</h4>
-      <p>Classification, Regression, Clustering, Neural Networks,
-         Model Evaluation, Feature Engineering</p>
-    </div>
-
-    <div class="skill-group">
-      <h4><i class="fas fa-comments"></i> NLP & Speech</h4>
-      <p>BERT, mBERT, MuRIL, IndicBERT, NLTK, Speech Processing</p>
-    </div>
-
-    <div class="skill-group">
-      <h4><i class="fas fa-camera"></i> Computer Vision</h4>
-      <p>YOLOv5, Image Segmentation, Object Detection</p>
-    </div>
-
-    <div class="skill-group">
-      <h4><i class="fas fa-chart-line"></i> Data Analysis</h4>
-      <p>Pandas, NumPy, Matplotlib, Seaborn, Statistical Analysis</p>
-    </div>
-
-    <div class="skill-group">
-      <h4><i class="fab fa-git-alt"></i> Tools</h4>
-      <p>Git, GitHub, Jupyter Notebook, Google Colab, VS Code</p>
-    </div>
-
-  </div>
-</section>
-
-<section id="contact" class="section reveal">
-  <h2>Contact</h2>
-  <p>Email: athirachandran4224@gmail.com</p>
-  <p>Kannur, Kerala</p>
-</section>
 
 <footer>
   © 2026 Athira Chandran | AI Portfolio
