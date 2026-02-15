@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <title>Athira Chandran | Data Science Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
+
 <body>
 
 <div class="particles"></div>
@@ -59,65 +64,45 @@
   <h2>Projects</h2>
 
   <div class="card">
-    <h3>Cross-Lingual Speaker Verification for Indic Languages</h3>
+    <h3><i class="fas fa-microphone-alt"></i> Cross-Lingual Speaker Verification</h3>
     <p>
-      Designed a robust speaker verification system by pre-training on high-resource
-      English datasets (LibriSpeech) and fine-tuning on low-resource Indic languages
-      like Tamil and Malayalam.
+      Built ECAPA-Conformer architecture combining spectral and prosodic features.
+      Applied hybrid AAM-Softmax + Triplet loss.
     </p>
-    <p>
-      Implemented ECAPA-Conformer architecture integrating spectral features
-      (Log-Mel, MFCC) and prosodic features (pitch, energy) using multi-head attention.
-      Improved embedding discriminability using hybrid AAM-Softmax and Triplet loss.
-    </p>
-    <p><strong>Impact:</strong> Enhanced robustness through SpecAugment and noise
-      augmentation, improving generalization across languages.</p>
+    <p><strong>Focus:</strong> Speech Processing | Representation Learning</p>
   </div>
 
   <div class="card">
-    <h3>Multilingual Hate Speech Detection</h3>
+    <h3><i class="fas fa-language"></i> Multilingual Hate Speech Detection</h3>
     <p>
-      Developed a multilingual hate speech detection system for English and Malayalam datasets.
-      Compared traditional ML models (Decision Tree, Random Forest, XGBoost)
-      with deep learning models (CNN + BiLSTM) and transformer-based architectures
-      (BERT, MuRIL, mBERT, IndicBERT).
+      Compared ML models and Transformer architectures (BERT, MuRIL, mBERT).
+      Addressed class imbalance and hyperparameter optimization.
     </p>
-    <p>
-      Addressed class imbalance, optimized hyperparameters,
-      and evaluated performance using precision, recall, F1-score metrics.
-    </p>
-    <p><strong>Impact:</strong> Built a robust NLP pipeline for low-resource languages.</p>
+    <p><strong>Focus:</strong> NLP | Transformer Models</p>
   </div>
 
   <div class="card">
-    <h3>Indian Food Detection & Nutrient Estimation (YOLOv5)</h3>
+    <h3><i class="fas fa-utensils"></i> Indian Food Detection (YOLOv5)</h3>
     <p>
-      Developed a computer vision pipeline to detect Indian food items
-      and associate them with nutritional information.
+      Developed computer vision pipeline achieving mAP@0.5 of 0.76.
+      Reduced false positives by 18%.
     </p>
-    <p>
-      Implemented YOLOv5 object detection model and compared
-      optimization strategies.
-    </p>
-    <p><strong>Result:</strong> Achieved mAP@0.5 of 0.76 and reduced false positives by 18%
-      through threshold tuning and optimizer adjustments.</p>
+    <p><strong>Focus:</strong> Object Detection | Optimization</p>
   </div>
 
   <div class="card">
-    <h3>Integrated Segmentation & Classification Framework for Neonatal HIE</h3>
+    <h3><i class="fas fa-brain"></i> Neonatal HIE Framework</h3>
     <p>
-      Proposed a two-stage deep learning pipeline combining image segmentation
-      and classification for neonatal medical image analysis.
+      Two-stage segmentation + classification pipeline.
+      Achieved 89% accuracy and Dice score of 0.749.
     </p>
-    <p>
-      Achieved Dice score of 0.749 and classification accuracy of 89%.
-      Macro F1-score improved to 0.83 ensuring consistency across severity grades.
-    </p>
-    <p><strong>Achievement:</strong> Presented at IEEE INDICON 2025 conference.</p>
+    <p><strong>Focus:</strong> Medical AI | Deep Learning</p>
   </div>
 
 </section>
 
+  
+ 
 <section id="skills" class="section reveal">
   <h2>Technical Skills</h2>
 

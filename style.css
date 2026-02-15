@@ -6,10 +6,8 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #0f2027;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: white;
-  overflow-x: hidden;
+  background: #0a0a0a;
+  color: #eaeaea;
   scroll-behavior: smooth;
 }
 
@@ -17,8 +15,8 @@ header {
   position: fixed;
   width: 100%;
   padding: 20px 50px;
-  background: rgba(0,0,0,0.5);
-  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(8px);
   z-index: 1000;
 }
 
@@ -36,8 +34,13 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: #eaeaea;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00ffff;
 }
 
 .hero {
@@ -51,13 +54,14 @@ nav a {
 
 .glow {
   font-size: 3.5rem;
-  text-shadow: 0 0 20px #00f2ff;
+  color: #ffffff;
+  text-shadow: 0 0 15px #00ffff;
 }
 
 .btn {
   margin-top: 20px;
   padding: 12px 30px;
-  background: #00f2ff;
+  background: #00ffff;
   border-radius: 30px;
   text-decoration: none;
   color: black;
@@ -70,47 +74,64 @@ nav a {
 }
 
 .section {
-  padding: 100px 10%;
+  padding: 120px 10%;
   text-align: center;
 }
 
 .glass {
-  background: rgba(255,255,255,0.1);
-  padding: 30px;
+  background: rgba(255,255,255,0.05);
+  padding: 40px;
   border-radius: 20px;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
 }
 
 .card {
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
   padding: 30px;
-  margin: 20px 0;
+  margin: 30px 0;
   border-radius: 20px;
   transition: 0.4s;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  background: rgba(0,255,255,0.2);
+  transform: translateY(-8px);
+  background: rgba(0,255,255,0.08);
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+.card i {
+  margin-right: 10px;
+  color: #00ffff;
 }
 
-.skills span {
-  background: rgba(0,255,255,0.2);
-  padding: 10px 20px;
-  border-radius: 20px;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.skill-card {
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.skill-card i {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #00ffff;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: rgba(0,255,255,0.08);
 }
 
 footer {
   text-align: center;
   padding: 30px;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.8);
 }
 
 .reveal {
@@ -122,13 +143,4 @@ footer {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
-}
-
-.card p {
-  margin-top: 10px;
-  line-height: 1.6;
-}
-
-.glass p {
-  line-height: 1.7;
 }
