@@ -79,10 +79,12 @@ nav a:hover {
   padding: 120px 10%;
 }
 
-.section > h2 {
-  text-align: center;
+section.section h2 {
   width: 100%;
+  text-align: center !important;
+  margin-bottom: 60px;
 }
+
 
 #contact {
   padding-bottom: 150px;
