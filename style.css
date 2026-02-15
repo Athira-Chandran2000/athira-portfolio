@@ -129,10 +129,12 @@ section.section h2 {
 
 .skills-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
   gap: 30px;
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
+  justify-content: center;
 }
+
 
 .skill-group {
   background: rgba(255,255,255,0.07);
